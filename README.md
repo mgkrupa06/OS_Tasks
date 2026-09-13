@@ -10,10 +10,12 @@ Implemented the Producer-Consumer problem using Java threads.
 
 The program demonstrates:
 - Producer and Consumer threads
-- Bounded buffer
+- A bounded circular buffer
 - Thread synchronization
+- `synchronized` methods
 - `wait()` and `notifyAll()`
 - Handling of full and empty buffer conditions
+- Safe communication between threads
 
 **File:** `SmartConveyor.java`
 
@@ -25,11 +27,12 @@ Implemented multiplication of two **100 × 100 matrices** using Java Virtual Thr
 
 The program demonstrates:
 - Java Virtual Threads
-- One thread for each scalar multiplication operation
-- Matrix multiplication of 100 × 100 matrices
-- TensorFlow for result verification
+- One virtual thread for each individual scalar multiplication
+- 100 × 100 matrix multiplication
+- A total of 1,000,000 multiplication operations
+- TensorFlow for independent result verification
 - Swing-based animation to visualize the computation
-- Execution of **1,000,000 multiplication operations**
+- Atomic counters for tracking completed operations
 
 **Files:**
 - `MatrixMultiplication.java`
@@ -39,7 +42,7 @@ The program demonstrates:
 
 - Java 21
 - Java Virtual Threads
-- TensorFlow
+- TensorFlow Java
 - Maven
 - Java Swing
 
